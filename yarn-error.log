@@ -1,0 +1,38 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js build
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.18.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /var/www/html/works/tailwindCSS-task/package.json: Unexpected token } in JSON at position 99
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "scripts": {
+      "build": "tailwindcss build src/css/style.css -o src/css/output.css --watch",
+  },
+    "devDependencies": {
+      "tailwindcss": "^3.4.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
